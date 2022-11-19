@@ -1,0 +1,509 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace AddressesJazz
+{
+    /// <summary>Main form for the JAZZ live AARAU address database</summary>
+    public partial class JazzForm : Form
+    {
+        /// <summary>Main class that executes all commands in this application</summary>
+        private JazzMain m_main = null;
+
+        /// <summary>Table that holds all addresses</summary>
+        private ExcelUtil.Table m_table_addresses = null;
+
+        /// <summary>Index for the current record</summary>
+        private int m_row_index = 0;
+
+        /// <summary>Search result record indices</summary>
+        private int[] m_search_record_indices = null;
+
+        /// <summary>Search result record display strings</summary>
+        private string[] m_search_display_strings = null;
+
+        /// <summary>Constructor that initializes the form and gets the current address list from Internet</summary>
+        public JazzForm()
+        {
+            InitializeComponent();
+
+            this.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.JazzForm_MouseWheel);
+
+            m_main = new JazzMain(this);
+
+            string error_message = "";
+
+            // For testing only
+            string test_file_in = @"C:\GunnarDevelopment\Excel\ExcelTestData\JazzLiveAdressen.csv";
+            string test_file_out = @"C:\GunnarDevelopment\Excel\ExcelTestData\JazzLiveAdressenConverted.csv";
+
+            if (!ConvertCsv.CPlusPlusToCSharp(test_file_in, test_file_out, out error_message))
+            {
+                MessageBox.Show("JazzForm Call of CPlusPlusToCSharp failed " + error_message);
+            }
+
+            _SetCaptions();
+
+
+            if (!m_main.DownloadFile(out error_message))
+            {
+                MessageBox.Show(error_message);
+
+                if (!m_main.LocalFileExists(out error_message))
+                {
+                    // Exit the application!
+                    MessageBox.Show(error_message);
+                    return;
+                }
+            }
+
+            if (!m_main.CreateAddressesTable(out error_message))
+            {
+                MessageBox.Show(error_message);
+                return;
+            }
+
+            m_table_addresses = m_main.GetTable();
+
+            m_row_index = 1; // First record
+            _SetControlsTexts(m_row_index);
+
+            _SetSearchResult(); // Initialization
+
+        }
+
+        /// <summary>Set texts for all controls</summary>
+        /// <param name="i_row_index">Index for the row (record) that shall be displayed</param>
+        private void _SetControlsTexts(int i_row_index)
+        {
+            if (m_table_addresses == null) return;
+
+            string error_message = "";
+            this.m_textbox_first_name.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_02, out error_message);
+            this.m_textbox_family_name.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_03, out error_message);
+            this.m_textbox_street.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_04, out error_message);
+            this.m_textbox_street_number.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_05, out error_message);
+            this.m_textbox_postal_code.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_06, out error_message);
+            this.m_textbox_city.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_07, out error_message);
+            this.m_textbox_email.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_08, out error_message);
+
+            _SetCheckBox(this.m_checkbox_post, m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_10, out error_message));
+            _SetCheckBox(this.m_checkbox_newsletter, m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_11, out error_message));
+
+            // Support for the selected season
+            this.m_textbox_support.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_13, out error_message);
+
+            this.m_textbox_comment_one.Text = m_table_addresses.GetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_15, out error_message);
+        }
+
+        /// <summary>Set table record</summary>
+        private void _SetTableRecord(int i_row_index)
+        {
+            if (m_table_addresses == null) return;
+
+            string error_message = "";
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_02, this.m_textbox_first_name.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_03, this.m_textbox_family_name.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_04, this.m_textbox_street.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_05, this.m_textbox_street_number.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_06, this.m_textbox_postal_code.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_07, this.m_textbox_city.Text.Trim(), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_08, this.m_textbox_email.Text.Trim(), out error_message)) return;
+
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_10, _GetCheckBoxAsString(this.m_checkbox_post), out error_message)) return;
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_11, _GetCheckBoxAsString(this.m_checkbox_newsletter), out error_message)) return;
+
+            // Support for the selected season
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_13, this.m_textbox_support.Text.Trim(), out error_message)) return;
+
+            if (!m_table_addresses.SetFieldString(i_row_index, AddressesJazzSettings.Default.Name_Record_15, this.m_textbox_comment_one.Text.Trim(), out error_message)) return;
+
+        }
+
+        /// <summary>Set captions (labels) for the controls</summary>
+        private void _SetCaptions()
+        {
+            
+            this.m_label_first_name.Text = AddressesJazzSettings.Default.Caption_Record_02;
+            this.m_label_family_name.Text = AddressesJazzSettings.Default.Caption_Record_03;
+            this.m_label_street.Text = AddressesJazzSettings.Default.Caption_Record_04;
+            this.m_label_street_number.Text = AddressesJazzSettings.Default.Caption_Record_05;
+            this.m_label_postal_code.Text = AddressesJazzSettings.Default.Caption_Record_06;
+            this.m_label_city.Text = AddressesJazzSettings.Default.Caption_Record_07;
+            this.m_label_email.Text = AddressesJazzSettings.Default.Caption_Record_08;
+
+            this.m_checkbox_post.Text = AddressesJazzSettings.Default.Caption_Record_10;
+            this.m_checkbox_newsletter.Text = AddressesJazzSettings.Default.Caption_Record_11;
+
+            this.m_label_support.Text = AddressesJazzSettings.Default.Caption_Record_13;
+            this.m_label_comment_one.Text = AddressesJazzSettings.Default.Caption_Record_15;
+
+            this.m_label_season.Text = AddressesJazzSettings.Default.Caption_Season;
+            this.m_button_next.Text = AddressesJazzSettings.Default.Caption_Next;
+            this.m_button_previous.Text = AddressesJazzSettings.Default.Caption_Previous;
+            this.m_label_search.Text = AddressesJazzSettings.Default.Caption_Search;
+            this.m_button_delete.Text = AddressesJazzSettings.Default.Caption_Delete;
+            this.m_button_add.Text = AddressesJazzSettings.Default.Caption_Add;
+            this.m_button_checkout.Text = AddressesJazzSettings.Default.Caption_StatusUndefined;
+            this.m_button_exit.Text = AddressesJazzSettings.Default.Caption_Exit;
+        }
+
+        /// <summary>Set check box to true or false</summary>
+        private void _SetCheckBox(CheckBox i_checkbox, string i_str_boolean)
+        {
+            if (i_str_boolean == "WAHR")
+            {
+                i_checkbox.Checked = true;
+            }
+            else
+            {
+                i_checkbox.Checked = false;
+            }
+        }
+
+        /// <summary>Set check box to true or false</summary>
+        private string _GetCheckBoxAsString(CheckBox i_checkbox)
+        {
+            string ret_str_boolean = "";
+
+            if (i_checkbox.Checked)
+            {
+                ret_str_boolean = "WAHR";
+            }
+            else
+            {
+                ret_str_boolean = "FALSCH";
+            }
+
+            return ret_str_boolean;
+        }
+
+        /// <summary>Sort with postal code</summary>
+        private void m_button_postal_code_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            string record_name = AddressesJazzSettings.Default.Name_Record_06;
+            string error_message = "";
+            if (!m_main.Sort(record_name, out error_message))
+            {
+                MessageBox.Show(error_message);
+            }
+
+            m_row_index = 1;
+            _SetControlsTexts(m_row_index);
+        }
+
+        /// <summary>Sort with first name</summary>
+        private void m_button_first_name_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            string record_name = AddressesJazzSettings.Default.Name_Record_02;
+            string error_message = "";
+            if (!m_main.Sort(record_name, out error_message))
+            {
+                MessageBox.Show(error_message);
+            }
+
+            m_row_index = 1;
+            _SetControlsTexts(m_row_index);
+        }
+
+        /// <summary>Sort with family name</summary>
+        private void m_button_family_name_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            string record_name = AddressesJazzSettings.Default.Name_Record_03;
+            string error_message = "";
+            if (!m_main.Sort(record_name, out error_message))
+            {
+                MessageBox.Show(error_message);
+            }
+
+            m_row_index = 1;
+            _SetControlsTexts(m_row_index);
+        }
+
+        /// <summary>Mouse wheel rotated</summary>
+        private void JazzForm_MouseWheel(object sender, MouseEventArgs e)
+        {
+            if (m_table_addresses == null) return;
+
+            _SetTableRecord(m_row_index);
+
+            int wheel_notches = e.Delta / 120;
+
+            if (wheel_notches > 0)
+            {
+                if (m_row_index >= 2)
+                {
+                    m_row_index = m_row_index - 1;
+                    _SetControlsTexts(m_row_index);
+                }
+            }
+            else
+            {
+                if (m_row_index <= m_table_addresses.NumberRows - 2)
+                {
+                    m_row_index = m_row_index + 1;
+                    _SetControlsTexts(m_row_index);
+                }
+            }
+        }
+
+        /// <summary>Display previous row (record)</summary>
+        private void m_button_previous_Click(object sender, EventArgs e)
+        {
+            if (m_table_addresses == null) return;
+
+            _SetTableRecord(m_row_index);
+
+            if (m_row_index >= 2)
+            {
+                m_row_index = m_row_index - 1;
+                _SetControlsTexts(m_row_index);
+            }
+        }
+
+        /// <summary>Display next row (record)</summary>
+        private void m_button_next_Click(object sender, EventArgs e)
+        {
+            if (m_table_addresses == null) return;
+
+            _SetTableRecord(m_row_index);
+
+            if (m_row_index <= m_table_addresses.NumberRows - 2)
+            {
+                m_row_index = m_row_index + 1;
+                _SetControlsTexts(m_row_index);
+            } 
+        }
+
+        /// <summary>Delete a record</summary>
+        private void m_button_delete_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            string error_message = "";
+            if (m_main.RemoveRow(m_row_index, out error_message))
+            {
+                m_row_index = 1;
+                _SetControlsTexts(m_row_index);
+            }
+        }
+
+        /// <summary>Add an addresse record</summary>
+        private void m_button_add_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            string error_message = "";
+            int empty_row_index = -1;
+            if (m_main.AppendEmptyRow(out empty_row_index, out error_message))
+            {
+                m_row_index = empty_row_index;
+                _SetControlsTexts(m_row_index);
+            }
+        }
+
+        /// <summary>Exit application</summary>
+        private void m_button_exit_Click(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            bool b_checkin = _CheckInAddresses();
+
+            this.Close();
+        }
+
+        /// <summary>Checkin of file with addresses</summary>
+        private bool _CheckInAddresses()
+        {
+            // Select functions depending on Chekin/Checkout status
+            // Check if changes have been made ....
+
+            string error_message = "";
+            if (!m_main.CreateOutputCsv(out error_message))
+            {
+                MessageBox.Show(error_message);
+                return false;
+            }
+
+            return true;
+        }
+
+
+        /// <summary>Checkin or checkout of file with addresses</summary>
+        private void m_button_checkout_Click(object sender, EventArgs e)
+        {
+            // TODO Select function
+            bool b_checkin = _CheckInAddresses();
+
+            // TODO Handle error
+        }
+
+        /// <summary>Search string was changed</summary>
+        private void m_textbox_search_TextChanged(object sender, EventArgs e)
+        {
+            string error_message = "";
+            if (m_main.Search(this.m_textbox_search.Text, out m_search_display_strings, out m_search_record_indices, out error_message))
+            {
+                _SetSearchResult();
+
+                _SetTableRecord(m_row_index);
+
+                int search_index_record = 0;
+                _SetSelectedSearchRecord(search_index_record);
+            }
+            else
+            {
+                MessageBox.Show(error_message);
+            }
+        }
+
+        /// <summary>Set search result</summary>
+        private void _SetSearchResult()
+        {
+            this.m_combobox_search.Items.Clear();
+            this.m_combobox_search.Text = "";
+            this.m_label_hits.Text = "0";
+
+            if (m_search_display_strings == null || m_search_record_indices == null ||
+                m_search_display_strings.Length == 0 || m_search_record_indices.Length == 0)
+            {
+                return;
+            }
+
+            for (int i_found = 0; i_found < m_search_display_strings.Length; i_found++)
+            {
+                string display_string = m_search_display_strings[i_found];
+
+                this.m_combobox_search.Items.Add(display_string);
+
+                if (0 == i_found)
+                {
+                    this.m_combobox_search.Text = display_string;
+                }
+
+                this.m_label_hits.Text = m_search_display_strings.Length.ToString();
+            }
+        }
+
+        /// <summary>User has selected another search record</summary>
+        private void m_combobox_search_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _SetTableRecord(m_row_index);
+
+            int search_index_record = this.m_combobox_search.SelectedIndex;
+
+            _SetSelectedSearchRecord(search_index_record);
+        }
+
+        /// <summary>Set the selected search record</summary>
+        private void _SetSelectedSearchRecord(int i_search_index_record)
+        {
+            if (m_search_display_strings == null || m_search_record_indices == null ||
+                m_search_display_strings.Length == 0 || m_search_record_indices.Length == 0)
+            {
+                return;
+            }
+
+            if (i_search_index_record < 0 || i_search_index_record >= m_search_record_indices.Length)
+            {
+                return;
+            }
+
+            m_row_index = m_search_record_indices[i_search_index_record];
+            _SetControlsTexts(m_row_index);
+        }
+
+        #region User changed address record
+        /// <summary>User changed the first name.</summary>
+        private void m_textbox_first_name_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the family name.</summary>
+        private void m_textbox_family_name_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the Email addresse.</summary>
+        private void m_textbox_email_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the post flag.</summary>
+        private void m_checkbox_post_CheckedChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the newsletter flag.</summary>
+        private void m_checkbox_newsletter_CheckedChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the street name.</summary>
+        private void m_textbox_street_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the street number.</summary>
+        private void m_textbox_street_number_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the postal code.</summary>
+        private void m_textbox_postal_code_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the city name.</summary>
+        private void m_textbox_city_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed the comment.</summary>
+        private void m_textbox_comment_one_TextChanged(object sender, EventArgs e)
+        {
+            // Do nothing
+        }
+
+        /// <summary>User changed season. TODO.</summary>
+        private void m_combobox_season_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // TODO QQQQQ
+        }
+
+        /// <summary>User changed the support sum.</summary>
+        private void m_textbox_support_TextChanged(object sender, EventArgs e)
+        {
+            // TODO Handle season ....
+            // Do nothing
+        }
+
+        /// <summary>User set an output request. TODO</summary>
+        private void m_combobox_output_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // TODO QQQQQ
+        }
+        #endregion
+
+    }
+}

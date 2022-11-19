@@ -1,0 +1,1617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AddressesJazz</name>
+    </assembly>
+    <members>
+        <member name="T:AddressesJazz.AddressesJazzSettings">
+            <summary>Holds the settings of the application.</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.FtpHost">
+            <summary>FTP host</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.FtpUser">
+            <summary>FTP user</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ConfigRootElement">
+            <summary>Configuration XML root element</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AddressesFileName">
+            <summary>Name of the file with the addresses</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AddressesServerDir">
+            <summary>Server directory for the address file AddressesFileName</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AddressesFileNameBeta">
+            <summary>Name of the file with the addresses for Beta (test) version</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.BetaVersion">
+            <summary>Flag telling if it a Beta (test) version</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.CopyCurrentAddressesForBetaVersion">
+            <summary>Flag telling if current addresses shall be copied to Beta (start) addresses</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.FileHelp">
+            <summary>Name of the help file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.FileTest">
+            <summary>Name of the test protocol file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.CheckInOutLogFileName">
+            <summary>Name of the checkin-checkout logfile for the addresses</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.CheckInLogFile">
+            <summary>Start string for checkin row in logfile</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.CheckOutLogFile">
+            <summary>Start string for checkout row in logfile</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AddressesDir">
+            <summary>Name of the directory with file AddressFileName</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AddressesBackupsDir">
+            <summary>Name of the directory with file AddressFileName backups</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputDir">
+            <summary>Name of the directory with output files</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.HelpDir">
+            <summary>Name of the directory for the help file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.AdressenServerDir">
+            <summary>Setup server directory for application Adressen</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.LatestVersionInfoDir">
+            <summary>Name of the server directory that has a file with the latest version info</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.NewVersionDir">
+            <summary>Name of the local and server directory for the installer for a new version</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ProgramDocumentation">
+            <summary>URL for the program documentation</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_00">
+            <summary>Output header </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_01">
+            <summary>Output mail addresses as Excel XSLX</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_02">
+            <summary>Output mail addresses as Excel CSV</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_03">
+            <summary>Output supporter as text</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_04">
+            <summary>Output sponsors as a text file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_05">
+            <summary>Output E-Mail addresses as a text file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_06">
+            <summary>Output supporter as Excel CSV</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_07">
+            <summary>Output supporter as XML</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.OutputList_08">
+            <summary>Output check results as a text file</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Season">
+            <summary>Caption for the combobox season</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Support">
+            <summary>Caption for the support</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Next">
+            <summary>Caption for the button next record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Previous">
+            <summary>Caption for the button previous record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Search">
+            <summary>Caption for the label search record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Delete">
+            <summary>Caption for the button delete record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Add">
+            <summary>Caption for the button add record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_CheckInOutUndefined">
+            <summary>Caption for the button Checkin/Checkout Undefined</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_CheckOut">
+            <summary>Caption for the button Checkin/CheckOut</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_CheckIn">
+            <summary>Caption for the button Checkin/CheckOut</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Exit">
+            <summary>Caption for the exit button</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_BackupFileSelect">
+            <summary>Caption selection of backup file for reset</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_01">
+            <summary>Record 1 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_01">
+            <summary>Caption for record 1</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_01">
+            <summary>Type record 1</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_01">
+            <summary>Help text record 1</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_02">
+            <summary>Record 2 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_02">
+            <summary>Caption for record 2</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_02">
+            <summary>Type record 2</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_02">
+            <summary>Help text record 2</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_03">
+            <summary>Record 3 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_03">
+            <summary>Caption for record 3</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_03">
+            <summary>Type record 3</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_03">
+            <summary>Help text record 3</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_04">
+            <summary>Record 4 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_04">
+            <summary>Caption for record 4</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_04">
+            <summary>Type record 4</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_04">
+            <summary>Help text record 4</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_05">
+            <summary>Record 5 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_05">
+            <summary>Caption for record 5</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_05">
+            <summary>Type record 5</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_05">
+            <summary>Help text record 5</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_06">
+            <summary>Record 6 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_06">
+            <summary>Caption for record 6</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_06">
+            <summary>Type record 6</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_06">
+            <summary>Help text record 6</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_07">
+            <summary>Record 7 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_07">
+            <summary>Caption for record 7</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_07">
+            <summary>Type record 7</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_07">
+            <summary>Help text record 7</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_08">
+            <summary>Record 8 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_08">
+            <summary>Caption for record 8</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_08">
+            <summary>Type record 8</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_08">
+            <summary>Help text record 8</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_09">
+            <summary>Record 9 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_09">
+            <summary>Caption for record 9</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_09">
+            <summary>Type record 9</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_09">
+            <summary>Help text record 9</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_10">
+            <summary>Record 10 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_10">
+            <summary>Caption for record 10</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_10">
+            <summary>Type record 10</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_10">
+            <summary>Help text record 10</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Record_11">
+            <summary>Record 11 name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Caption_Record_11">
+            <summary>Caption for record 11</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_11">
+            <summary>Type record 11</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_11">
+            <summary>Help text record 11</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Name_Start_Record_Supporter">
+            <summary>Start part for record supporter. Season years (starting with 2009-2010) shall be added</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Type_Record_Supporter">
+            <summary>Type record supporter</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.Help_Record_Start_Supporter">
+            <summary>Help text start for supporter. Season years (starting with 2009-2010) shall be added</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoExcelFile">
+            <summary>Error message: There is no input Excel file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoInternetConnection">
+            <summary>Error message: No connection to Internet is available</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoExcelFileDownload">
+            <summary>Error message: Failure downloading Excel file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNewVersionDownload">
+            <summary>Error message: Failure downloading installer for a new version</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgNewVersionDownload">
+            <summary>Message: Installer for a new version is downloaded</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgUploadAddressesFailed">
+            <summary>Error message: Failure uploading Excel file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgUploadBackupAddressesFailed">
+            <summary>Error message: Failure uploading backup Excel file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoCheckInOutLogFileDownload">
+            <summary>Error message: Failure downloading Excel file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgAddressesCheckOutBy">
+            <summary>Error message: Adresses are already checked out by somebody else </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgEmailAddressNoAtSign">
+            <summary>Error message: E-Mail address contains no At Sign @ </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoFirstNameNoFamilyName">
+            <summary>Error message: There must a first name or a family name </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoStreetForMail">
+            <summary>Error message: Street must be defined for Mail</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoPostalCodeForMail">
+            <summary>Error message: Postal code must be defined for Mail</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoCityForMail">
+            <summary>Error message: City must be defined for Mail</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoEmailAddressForNewsletter">
+            <summary>Error message: Email address must be defined for Newsletter</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgRecordNotSaved">
+            <summary>Error message: Checked out addresses are not saved</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgCancelWithoutSave">
+            <summary>Error message: Checked out addresses are not saved</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgAddressesForceCheckOut">
+            <summary>Message: Force checkout anyhow? </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgUploadLogfile">
+            <summary>Error message: Adresses are already checked out by somebody else </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgOutputNotYetImplemented">
+            <summary>Error message: Output of the requested list is not yet implemented </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgShallAddressesBeUploaded">
+            <summary>Message: Message when the user makes Exit or Cancel and the addresses are checked out</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgCaptionShallAddressesBeUploaded">
+            <summary>Message: Message cation when the user makes Exit or Cancel and the addresses are checked out</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgExcelFileDownload">
+            <summary>Message: Excel file is downloaded from the server</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgAddressesAreCheckedOut">
+            <summary>Message: Addresses are checked out</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgAddressesAreCheckedIn">
+            <summary>Message: Addresses are checked in</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNoLocalExcelFile">
+            <summary>Error message: There is no local address file </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgAddressesNotCheckedOut">
+            <summary>Error message: The addresses have not been checked out </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgExitApplication">
+            <summary>Message: Exit application</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgNotValidCharsHaveBeenRemoved">
+            <summary>Not valid character(s) in string. String has been modified</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgAllCharsExceptNumbersHaveBeenRemoved">
+            <summary>Only numbers are allowed</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgGettingBackupFilesFailed">
+            <summary>Error message: Failure getting backup address files </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgAddressesMustBeCheckedOutForReset">
+            <summary>Error message: Reset only if addresses are checked out </summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ErrMsgFileIsLocked">
+            <summary>Error message: File is locked, i.e. it is opened by another program</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.MsgNewVersionIsAvailable">
+            <summary>Status message: A new version is available</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.GuiTextProgramTitle">
+            <summary>GUI program title</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.GuiTextFamilyName">
+            <summary>GUI default band text</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.GuiHelpDialogTitle">
+            <summary>GUI help dialog title</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.GuiHelpDialogExit">
+            <summary>GUI help dialog exit button</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipApplication">
+            <summary>GUI Tool tip application</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxFirstName">
+            <summary>GUI Tool tip first name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxFamyliName">
+            <summary>GUI Tool tip family name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxStreetName">
+            <summary>GUI Tool tip street name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxHouseNumber">
+            <summary>GUI Tool tip house number</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxPostalCode">
+            <summary>GUI Tool tip postal code</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxCityName">
+            <summary>GUI Tool tip city name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxEmailAddress">
+            <summary>GUI Tool tip E-Mail address</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxCommentOne">
+            <summary>GUI Tool tip comment one</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipTextBoxSupport">
+            <summary>GUI Tool tip support</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonDelete">
+            <summary>GUI Tool tip delete record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonAdd">
+            <summary>GUI Tool tip add record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonSortFirstName">
+            <summary>GUI Tool tip sort with first name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonSortFamilyName">
+            <summary>GUI Tool tip sort with family name</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonSortPostalCode">
+            <summary>GUI Tool tip sort with postal code</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonCheckInOut">
+            <summary>GUI Tool tip checkin-checkout button</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonPreviousRecord">
+            <summary>GUI Tool tip previous record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonNextRecord">
+            <summary>GUI Tool tip previous record</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipOutputData">
+            <summary>GUI Tool tip output data</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipSeason">
+            <summary>GUI Tool tip season</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipSearchString">
+            <summary>GUI Tool tip search string</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipSearchStringHits">
+            <summary>GUI Tool tip search hits</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipStatusMessage">
+            <summary>GUI Tool tip status message</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipExitApplication">
+            <summary>GUI Tool tip exit application</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipCheckPost">
+            <summary>GUI Tool tip check box mail</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipCheckNewsletter">
+            <summary>GUI Tool tip check box newsletter</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipCheckSponsor">
+            <summary>GUI Tool tip check box sponsor</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipSearchResults">
+            <summary>GUI Tool tip search results</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonHelp">
+            <summary>GUI Tool tip help</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipHelpTextBox">
+            <summary>GUI Tool tip help dialog text</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipHelpExit">
+            <summary>GUI Tool tip help dialog exit</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipButtonUpdate">
+            <summary>GUI Tool tip update</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipReset">
+            <summary>GUI Tool tip reset</summary>
+        </member>
+        <member name="F:AddressesJazz.AddressesJazzSettings.ToolTipNewVersionAvailable">
+            <summary>GUI Tool tip new version is available</summary>
+        </member>
+        <member name="M:AddressesJazz.AddressesJazzSettings.#ctor">
+            <summary>Constructor</summary>
+        </member>
+        <member name="P:AddressesJazz.AddressesJazzSettings.Default">
+            <summary>Gets the default settings instance.</summary>
+            <remarks>
+            <para>On first access, an attempt is made to load the settings from an application-specific location. If the
+            file is not found or corrupt, then all fields of the returned instance are set to their default values.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:AddressesJazz.AddressesJazzSettings.Save">
+            <summary>Saves all settings.</summary>
+        </member>
+        <member name="M:AddressesJazz.AddressesJazzSettings.ReadFromConfigFile">
+            <summary>Reads the configuration file and sets values in defaultSettings.</summary>
+        </member>
+        <member name="T:AddressesJazz.CheckData">
+            <summary>Class with functions that check address data</summary>
+        </member>
+        <member name="M:AddressesJazz.CheckData.CheckNames(System.String,System.String,System.String@)">
+            <summary>Check names.
+            <para>Both first name and family name are not allowed to be empty.</para>
+            </summary>
+            <param name="i_first_name">First name (input string must be trimmed)</param>
+            <param name="i_family_name">Family name (input string must be trimmed)</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.CheckData.CheckEmailAddress(System.String,System.String@)">
+            <summary>Check the Email address
+            <para>There must be an @ in the E-Mail address.</para>
+            </summary>
+            <param name="i_email_address">Email address (input string must be trimmed)</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.CheckData.EmailAddressExists(System.String,System.String@)">
+            <summary>Check that the Email address exists
+            <para>(For the case that a Newsletter is requested).</para>
+            </summary>
+            <param name="i_email_address">Email address (input string must be trimmed)</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.CheckData.CheckMailAddress(System.String,System.String,System.String,System.String,System.String@)">
+            <summary>Check the Mail address data
+            <para>All address fields must be defined</para>
+            </summary>
+            <param name="i_street">Street (input string must be trimmed)</param>
+            <param name="i_street_number">Street number (input string must be trimmed)</param>
+            <param name="i_postal_code">Postal code (input string must be trimmed)</param>
+            <param name="i_city">City (input string must be trimmed)</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="T:AddressesJazz.ConvertCsv">
+            <summary>Class with functions to convert csv files by removing, adding and modifying columns.
+            <para>These functions were only used once for converting data</para>
+            <para>The class is kept since the functions are good sample code for Table functions</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv.CPlusPlusToCSharp(System.String,System.String[],System.String,System.String@)">
+            <summary>Convert format from C++ application to the C# application. This is a function that only is used one time. Everything is hardcoded.</summary>
+            <param name="i_file_csv_in">Input CSV file name</param>
+            <param name="i_previous_file_names">Previous file names</param>
+            <param name="i_file_csv_out">Output CSV file name</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv._SupportColumnInitialValuesAsStrings(System.Int32)">
+            <summary>Create array of default values for a support column</summary>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv._AddColumnsForPreviousSeasons(ExcelUtil.Table@,System.String[],System.String@)">
+            <summary>Add columns in the table for previuos seasons. TODO What about the column headers ??? </summary>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv._AddSupportPreviousSeasons(ExcelUtil.Table@,System.String[],System.String@)">
+            <summary>Add the support from previous seasons to the input table</summary>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv._UpdateSupportColumn(ExcelUtil.Table@,System.String,System.String,System.String,System.String,System.String@)">
+            <summary>Update the support column value if the same first and family name exists</summary>
+        </member>
+        <member name="M:AddressesJazz.ConvertCsv._SupportColumnNameFromFile(System.String)">
+            <summary>Returns support colum name constructed from the input full file name</summary>
+        </member>
+        <member name="T:AddressesJazz.FormHelp">
+            <summary>Shows help</summary>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.#ctor(System.String)">
+            <summary>Constructor that displays the help file</summary>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.m_button_help_exit_Click(System.Object,System.EventArgs)">
+            <summary>Exit from help dialog</summary>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.m_button_test_protokoll_Click(System.Object,System.EventArgs)">
+            <summary>Open Test Protokoll with Notepad</summary>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.m_button_program_documentation_Click(System.Object,System.EventArgs)">
+            <summary>Open web page with the default browser</summary>
+        </member>
+        <member name="F:AddressesJazz.FormHelp.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AddressesJazz.FormHelp.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AddressesJazz.InternetUtil">
+            <summary>Internet utility functions</summary>
+        </member>
+        <member name="M:AddressesJazz.InternetUtil.IsInternetConnectionAvailable">
+            <summary>Returns true if Internet connection is available.</summary>
+        </member>
+        <member name="T:AddressesJazz.JazzForm">
+            <summary>Main form for the JAZZ live AARAU address database
+            <para>This is the Graphical User Interface to the application. Commands should not be executed in this class.</para>
+            </summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_main">
+            <summary>Main class that executes most of the commands in this application</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_table_addresses">
+            <summary>Table that holds all addresses</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_row_index">
+            <summary>Index for the current record</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_search_record_indices">
+            <summary>Search result record indices</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_search_display_strings">
+            <summary>Search result record display strings</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_current_version">
+            <summary>Current version as string</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.m_is_initializing">
+            <summary>Flag telling if controls are being initialized</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.#ctor">
+            <summary>Constructor that initializes the form
+            <para>1. Instance of JazzMain is created.</para>
+            <para>2. Captions are set (call of _SetCaptions).</para>
+            <para>3. Seasons controls are set (call of _SetSeasons).</para>
+            <para>4. Combo Box for output files are set (call of _SetComboboxOutput).</para>
+            <para>5. Gets the current address list from the server (calls JazzMainDownloadFile)</para>
+            <para>6. Address Table is created. Call of JazzMain.CreateAddressesTable</para>
+            <para>7. Text controls are set for the first record in the Table (call of SetControlsTexts).</para>
+            <para>8. Search controls are initialized (call of _SetSearchResult).</para>
+            <para>9. Status message (addresses downloaded) is set. Caption Checkout is set.</para>
+            <para>10. Tool tips are set (call of _SetToolTips)</para>
+            <para>11. Most controls are disabled since addresses not are checked out (call of _DisableControls).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.SetTable(ExcelUtil.Table)">
+            <summary>Set new table (created by a backup file)
+            <para>Set input Table instance equal to m_table_addresses</para>
+            <para>TODO Delete no longer used instance</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._VersionCheck">
+            <summary>Checks if there is a new version available
+            <para>Message will be written to the message control if available.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetToolTips">
+            <summary>Set tool tips
+            <para>Note that there also are tool tips for Labels since disabled controls don't show tool tips</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.SetControlsTexts(System.Int32)">
+            <summary>Set texts for all controls
+            <para>Function GetFieldString in class Table is called for each field.</para>
+            <para>Set default values for post (mail), newsletter and sponsor iv values not are set, i.e. for a new record</para>
+            <para>Text field for the current season is set (call of _SetTextBoxSupport)</para>
+            </summary>
+            <param name="i_row_index">Index for the row (record) that shall be displayed</param>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetTextBoxSupport(System.Int32)">
+            <summary>Set text box support for the selected season</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetSeasons">
+            <summary>Set combobox seasons
+            <para>Function GetAllSeasons in class Season is called.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetComboboxOutput">
+            <summary>Set combobox output</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetCaptions">
+            <summary>Set captions (labels) for the controls
+            <para>All captions are defined in the configuration file (class AddressesJazzSettings).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetCheckBox(System.Windows.Forms.CheckBox,System.String)">
+            <summary>Set check box to true or false</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._GetCheckBoxAsString(System.Windows.Forms.CheckBox)">
+            <summary>Set check box to true or false</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._CheckTableRecord(System.String@)">
+            <summary>Check table record
+            <para>Functions in class CheckData are called.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetTableRecord(System.Int32)">
+            <summary>Set table record, i.e. write the data to Table m_table_addresses
+            <para>(Changes that the user may have done are saved).</para>
+            <para>Function SetFieldString in class Table is called for each field.</para>
+            <para>Note that when there is no support the displayed field is empty, but in the Table it must be set to 0.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._DisableControls">
+            <summary>Disable controls (when addresses not are checked out)
+            <para>Colours for the disabled controls are set to LightGoldenrodYellow</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._EnableControls">
+            <summary>Enable controls (when addresses are checked out)
+            <para>Color for the (Checkout)/Save button is set to OrangeRed.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_postal_code_Click(System.Object,System.EventArgs)">
+            <summary>Sort with postal code
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Sort with function JazzMain.Sort</para>
+            <para>Display first record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_first_name_Click(System.Object,System.EventArgs)">
+            <summary>Sort with first name
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Sort with function JazzMain.Sort</para>
+            <para>Display first record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_family_name_Click(System.Object,System.EventArgs)">
+            <summary>Sort with family name
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Sort with function JazzMain.Sort</para>
+            <para>Display first record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.JazzForm_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>Mouse wheel was rotated
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Convert rotation to new current record index in Table</para>
+            <para>Display current record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_previous_Click(System.Object,System.EventArgs)">
+            <summary>Display previous row (record)
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Change current index to previos index</para>
+            <para>Display current record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_next_Click(System.Object,System.EventArgs)">
+            <summary>Display next row (record)
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Change current index to next index</para>
+            <para>Display current record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_delete_Click(System.Object,System.EventArgs)">
+            <summary>Delete a record
+            <para>Call of function JazzMain.RemoveRow</para>
+            <para>Display first record in the Table (call of SetControlsTexts).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_add_Click(System.Object,System.EventArgs)">
+            <summary>Add an address record
+            <para>Current (displayed) record must be checked before setting (saving) it. (call of _CheckTableRecord)</para>
+            <para>Set record (call of _SetTableRecord)</para>
+            <para>Call of JazzMain.AppendEmptyRow that adds a record. Record index is returned</para>
+            <para>Set support to 0 for all seasons (call of JazzMain.SetSupportToZeroForRow)</para>
+            <para>Display new record in the Table (call of SetControlsTexts)</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_exit_Click(System.Object,System.EventArgs)">
+            <summary>Exit application. 
+            <para>1. Handle the case when addresses are checked out. Call of _ExitWhenAddressesAreCheckedOut.</para>
+            <para>2. Remove all temporary used files. Call of JazzMain.RemoveAllTemporaryUsedFiles.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.JazzForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>Main form is closing when the user has killed the main form with the Cancel button.
+            <para>Handles the case when addresses are checked out. Addresses (changes) will not be saved.</para>
+            <para>1. If addresses are are checked out call of JazzMain.UploadCheckOutInFileButNotAddresses.</para>
+            <para>2. Delete all temporary used files. Call of JazzMain.RemoveAllTemporaryUsedFiles</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._ExitWhenAddressesAreCheckedOut">
+            <summary>Handles the case when the user exits the application and the addresses are checked out</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._CheckInAddresses">
+            <summary>Check in the CSV file with addresses
+            <para>Call of JazzMain.CreateAndUploadFiles</para>
+            <para>Change button Save to caption Checkout</para>
+            <para>Set status message</para>
+            <para>Disable controls (call of _DisableControls).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._CheckOutAddresses">
+            <summary>Check out file with addresses
+            <para>1. Update the table with current address data from the server. Call of _UpdateTableWithAddressesFromServer.</para>
+            <para>2. Checkout. Call of JazzMain.CheckOutAddresses</para>
+            <para>   Show error message if addresses are checked out by somebody else</para>
+            <para>   For this case give the user the possibility to anyhow checkout addresses</para>
+            <para>   If the user wants this call JazzMain.ForceCheckOutAddresses</para>
+            <para>3. Change button caption from Checkout to Save</para>
+            <para>4. Display status message</para>
+            <para>5. Enable the controls. Call of _EnableControls.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._UpdateTableWithAddressesFromServer(System.String@)">
+            <summary>Update table with addresses data from the server
+            <para>This function should be called just before a checkout is made. Other persons may have changed data.</para>
+            <para>1. Function shall only be called when addresses not are checked out. Call of JazzMain.AddressesCheckedOut.</para>
+            <para>2. Get names for current record. Calls of Table.GetFieldString</para>
+            <para>3. Download the csv address file from the server. Call of JazzMain.DownloadFile.</para>
+            <para>4. Create the table with the downloaded file. Call of JazzMain.CreateAddressesTable.</para>
+            <para>5. Set the current record to one (1) if names not are equal, i.e. somebody else has added rows.</para>
+            <para>6. Set the controls for the current record. Call of SetControlsTexts.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_checkinout_Click(System.Object,System.EventArgs)">
+            <summary>Checkin or checkout file with addresses</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_search_TextChanged(System.Object,System.EventArgs)">
+            <summary>Search string was changed
+            <para>Call function JazzMain.Search</para>
+            <para>Set seach result (call of _SetSearchResult).</para>
+            <para>Set table record (call of _SetTableRecord).</para>
+            <para>Set the selected record (call of _SetSelectedSearchRecord).</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetSearchResult">
+            <summary>Set search result</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_combobox_search_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>User has selected another search record</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._SetSelectedSearchRecord(System.Int32)">
+            <summary>Set the selected search record</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._RemoveInvalidCharsFromInput(System.Windows.Forms.TextBox)">
+            <summary>Remove invalid characters from input</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm._RemoveAllCharsButNumbers(System.Windows.Forms.TextBox)">
+            <summary>Remove all characters except numbers</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_first_name_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the first name.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_family_name_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the family name.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_email_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the Email addresse.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_checkbox_post_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>User changed the post flag.
+            <para>Do nothing</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_checkbox_newsletter_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>User changed the newsletter flag.</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_checkbox_sponsor_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>User changed the sponsor flag.
+            <para>Do nothing</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_street_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the street name.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_street_number_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the street number.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_postal_code_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the postal code.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_city_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the city name.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_comment_one_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the comment.
+            <para>Call of _RemoveInvalidCharsFromInput</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_comment_one_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>Keydown comment.
+            <para>Do nothing</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_comment_one_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>Keypress comment.
+            <para>Do nothing</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_combobox_season_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>User changed season.
+            <para>Call of SetControlsTexts</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_textbox_support_TextChanged(System.Object,System.EventArgs)">
+            <summary>User changed the support sum.
+            <para>Call of _RemoveAllCharsButNumbers</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_combobox_output_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>User has set an output request.
+            <para>Requests are executed by function ExecuteRequest in class Output</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.AlwaysRecreateTableAfterOutput(System.String@)">
+            <summary>TODO This should not be necessary
+            <para>Obviously are the output functions changing the table</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_help_Click(System.Object,System.EventArgs)">
+            <summary>User clicked the help button
+            <para>Show dialog FormHelp</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_update_Click(System.Object,System.EventArgs)">
+            <summary>User clicked the download button
+            <para>Call of JazzMain.DownloadNewVersion</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.m_button_reset_Click(System.Object,System.EventArgs)">
+            <summary>User clicked the reset button
+            <para>Show dialog ResetForm</para>
+            </summary>
+        </member>
+        <member name="F:AddressesJazz.JazzForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AddressesJazz.JazzForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AddressesJazz.JazzMain">
+            <summary>Main class for the application Jazz Adressen. that executes most of the commands in this application
+            <para>This class executes most of the commands coming from the controls of the JazzForm form.</para>
+            <para>The other command execution classes are Output and Reset. In the GUI JazzForm class should nothing be executed.</para>
+            <para>Typical commands are: Add or delete a person in the address database, sort records, output lists, etc.</para>
+            <para>At start of the application the current address list (a CSV file) will be downloaded with FTP.</para>
+            <para>The downloaded address list defines an instance of the class Table that holds all data of the list.</para>
+            <para>Changes of the address list can only be done if the address list has been checked out.</para>
+            <para>Checkout means that the user will be registered in an checkin/checkout file also down- and uploaded with FTP</para>
+            <para>Only one person at a time can checkout the address list.</para>
+            </summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_ftp_password">
+            <summary>FTP password for the download and upload</summary>
+        </member>
+        <member name="P:AddressesJazz.JazzMain.FtpPassword">
+            <summary>Get FTP password</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_table_addresses">
+            <summary>Addresses table. The table corresponds to the input/otput CSV file.</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_exe_directory">
+            <summary>Path to the exe directory. Used to get the paths to the application subdirectories (Excel, Output, etc)</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_main_form">
+            <summary>The main form for this application. Commands are coming from controls (edit fields, buttons, ..) of this form.</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_file_encoding">
+            <summary>Encoding used for read and write for files</summary>
+        </member>
+        <member name="F:AddressesJazz.JazzMain.m_addresses_checked_out">
+            <summary>Flag telling if the addresses list has been checked out.</summary>
+        </member>
+        <member name="P:AddressesJazz.JazzMain.AddressesCheckedOut">
+            <summary>Get or set the flag telling if the addresses list has been checked out</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.#ctor(AddressesJazz.JazzForm)">
+            <summary>Constructor 
+            <para>The config file will be created by a function in class AddressesJazzSettings if not existing in the exe directory. </para>
+            <para>After the installation of a new version of the application Jazz Adressen the file should (must) be created.</para>
+            </summary>
+            <param name="i_main_form">The main form for application Jazz Adressen</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.CreateAndUploadFiles(System.String@)">
+            <summary>Create and upload the address CSV file
+            <para>Upload of the address file is only allowed if addresses has been checked out.</para>
+            <para>1. The function checks if there is an Internet connection.</para>
+            <para>2. The checkin/checkout log file is downloaded with FTP. Return with error message if not checked out.</para>
+            <para>3. The address CSV file and a backup copy is created by the function TableToCsv in class FromTable.</para>
+            <para>4. The CSV files are uploaded by the function UploadFile in the class Ftp.UpLoad.</para>
+            <para>5. A checkin line is added in the checkin/checkout log file. This file is also upoaded with UploadFile.</para>
+            <para>6. The flag m_addresses_checked_out is set to false.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.CreateAndUploadSupporterXmlFile(ExcelUtil.Table,System.String@)">
+            <summary>
+            Creates and uploads a supporter XML file to the server
+            </summary>
+            <param name="i_table_addresses">Table wit all addresses</param>
+            <param name="o_error">Error message for failure</param>
+            <returns>True if the XML file was uploaded</returns>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.UploadCheckOutInFileButNotAddresses(System.String@)">
+            <summary>Check in without saving addresses
+            <para>Function for the case that addresses are checked out but the user don't want to upload (save) the file.</para>
+            <para>The checkin/checkout log file is downloaded with FTP and a checkin line is appended.</para>
+            <para>The checkin/checkout log file is upoaded with UploadFile in class Ftp.UpLoad.</para>
+            <para>The flag m_addresses_checked_out is set to false.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.DownloadFile(System.String@)">
+            <summary>Download the addresses CSV file from the server with FTP
+            <para>1. The function checks if there is an Internet connection.</para>
+            <para>2. The addresses CSV file is downloaded with function DownloadFile in class Ftp.DownLoad.</para>
+            <para>3. The file is saved in a subdirectory (Excel) to the exe directory.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.DownloadNewVersion(System.String@)">
+            <summary>Download an installer for a new version of the Jazz Adressen application from the server with FTP
+            <para>1. The function checks if there is an Internet connection.</para>
+            <para>2. The installer is (and possibly other files are) downloaded with function Getfiles in class Ftp.DownLoad.</para>
+            <para>3. The installer is saved in a subdirectory (NeueVersion) to the exe directory.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.GetSaveAddressesMessage(System.String@,System.String@,System.String@)">
+            <summary>Get the error message when the user has checked out addresses and exits the application with cancel.</summary>
+            <para>1. Message and caption is retrieved from the configuration file (AddressesJazzSettings).</para>
+            <param name="o_message">Message</param>
+            <param name="o_caption">Caption for the error message</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.CheckOutAddresses(System.String@)">
+            <summary>Check out the addresses file 
+            <para>1. The checkin/checkout file is downloaded (with function _DownloadCheckOutInLogFile).</para>
+            <para>2. The fields of the last row in the file is retrieved (with function _GetLastRowCheckInOutFields)</para>
+            <para>3. Return with error if addresses already are checked out by somebody else.</para>
+            <para>4. Append logout line with function _AppendLogFileRow</para>
+            <para>5. Upload the checkin/checkout file with function UploadFile in class Ftp.UpLoad.</para>
+            <para>6. The flag m_addresses_checked_out is set to true.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.ForceCheckOutAddresses(System.String@)">
+            <summary>Force a checkout even if addresses are checked out by somebody else, 
+            <para>i.e. check out the addresses file without checking if is checked in</para>
+            <para>There should normally be no need to call this function! End of application shall always make a checkin.</para>
+            <para>1. The checkin/checkout file is downloaded (with function _DownloadCheckOutInLogFile).</para>
+            <para>2. Append logout line with function _AppendLogFileRow</para>
+            <para>3. Upload the checkin/checkout file with function UploadFile in class Ftp.UpLoad.</para>
+            <para>4. The flag m_addresses_checked_out is set to true.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._AddressesAreCheckedOut(System.String,System.String@)">
+            <summary>Returns false if addresses not are checked out by this computer
+            <para>1. The fields of the last row in the file is retrieved (with function _GetLastRowCheckInOutFields)</para>
+            <para>2. Return with error if computer field name not is equal to this computer.</para>
+            </summary>
+            <param name="i_local_file_name">Full local name of the checkin-checkout file</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._DownloadCheckOutInLogFile(System.String@,System.String@,System.String@)">
+            <summary>Download the checkin/checkout file from the server with FTP
+            <para>1. The function checks if there is an Internet connection.</para>
+            <para>2. The checkin/checkout file is downloaded with function DownloadFile in class Ftp.DownLoad.</para>
+            </summary>
+            <param name="o_server_path_file">Server checkin-checkout path-file name</param>
+            <param name="o_local_file_name">Full name of checkin-checkout file</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._AppendLogFileRow(System.String,System.String,System.String@)">
+            <summary>Append row to login-logout file
+            <para>Time and machine (computer) is added to the input string. </para>
+            <para>The line is appended to the file.</para>
+            </summary>
+            <param name="i_local_file_name">Full input file name</param>
+            <param name="i_start_append_row">Start string for the append row (login or logout)</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetLastRowCheckInOutFields(System.String,System.String@,System.String@,System.String@,System.String@)">
+            <summary>Get the fields of the last row of the checkin-checkout file 
+            <para>1. Get last row (call of function _GetLastRow).</para>
+            <para>2. Retrieve the field values. The start of each row is defined by configuration</para>
+            <para>   file strings CheckInLogFile and CheckOutLogFile</para>
+            </summary>
+            <param name="i_local_file_name">Full input file name</param>
+            <param name="o_start">Start field of the row</param>
+            <param name="o_time">Time field of the row</param>
+            <param name="o_machine">Machine name field of the row</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetLastRow(System.String,System.String@,System.String@)">
+            <summary>Get last row of the input file </summary>
+            <para>File is opened and all rows are read. The last (not empy) row is returned.</para>
+            <param name="i_local_file_name">Full input file name</param>
+            <param name="o_last_row">Last (non-empty) row of the file</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.LocalFileExists(System.String@)">
+            <summary>Returns false if the local address file is missing</summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.GetOutputFileName(System.String)">
+            <summary>Returns the full file name for an output file
+            <para>1. Output directory is retrieved from the configuration file (AddressesJazzSettings).</para>
+            <para>2. A help function in class AdressesUtility.FileUtil is called to construct the name.</para>
+            </summary>
+            <param name="i_file_name">File name with extension without path</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.GetOutputFileNameNoTimeStamp(System.String)">
+            <summary>Returns the full file name for an output file without a time stamp
+            <para>1. Output directory is retrieved from the configuration file (AddressesJazzSettings).</para>
+            <para>2. A help function in class AdressesUtility.FileUtil is called to construct the name.</para>
+            </summary>
+            <param name="i_file_name">File name with extension without path</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetAddressesFileName">
+            <summary>Returns the full local file name for the addresses file
+            <para>1. File name and subdirectory name from the configuration file (AddressesJazzSettings).</para>
+            <para>2. Create the combined full name. Call of function AdressesUtility.FileUtil.AddressesFileName.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetAddressesFileNameBeta">
+            <summary>Returns the full file local name for the Beta version addresses file
+            <para>1. File name and subdirectory name from the configuration file (AddressesJazzSettings).</para>
+            <para>2. Create the combined full name. Call of function AdressesUtility.FileUtil.AddressesFileName.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetFtpAddressesFileName">
+            <summary>Returns the file name for the FTP addresses file
+            <para>1. File name from the configuration file (AddressesJazzSettings).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetCheckInOutLogFileName">
+            <summary>Returns the file name for the checkin-checkout logfile
+            <para>1. File name and subdirectory name from the configuration file (AddressesJazzSettings).</para>
+            <para>2. Create the combined full name. Call of function AdressesUtility.FileUtil.AddressesFileName.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._GetBackupAddressesFileName">
+            <summary>Returns the full file name for the backup addresses file
+            <para>1. File name and subdirectory name from the configuration file (AddressesJazzSettings).</para>
+            <para>   (Another file name for the beta version of the application).</para>
+            <para>2. Create the combined full name. Call of function AdressesUtility.FileUtil.BackupAddressesFileName.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.CreateAddressesTable(System.String@)">
+            <summary>Create addresses table from the addresses list
+            <para>1. Create and set the row header. Call of _SetRowHeader.</para>
+            <para>2. An instance of class Table is created (member variable m_table_addresses)</para>
+            <para>3. Get the local name of the csv file. Call of _GetAddressesFileName.</para>
+            <para>4. Create the table from the (from the server downloaded) csv file. Call of ToTable.CsvToTable.</para>
+            <para>5. For a new current season add a supporter column. Call of _AddSupporterColumnForNewCurrentSeason</para>
+            <para>6. Set header for the table (although not yet used in the application). Call of Table.SetRowHeader.</para>
+            <para></para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._AddSupporterColumnForNewCurrentSeason(ExcelUtil.RowHeader,System.String@)">
+            <summary>For a new current season a supporter column will be added
+            <para>The table m_table_addresses is the input and output table.</para>
+            <para>The input header row determines if a supporter column shall be added</para>
+            <para>1. Return without doing anything if the number of columns of the header row and the table is equal.</para>
+            <para>2. Get the field header name from the input header row. Call of FileHeader.GetFieldHeader.Name</para>
+            <para>3. Create string array with values for the column that shall be appended. Call of _SupportColumnInitialValuesAsStrings.</para>
+            <para>4. Create the column to append. Call of ExcelUtil.TableTools.CreateColumn.</para>
+            <para>5. Append the column. Call of ExcelUtil.TableTools.InsertColumn.</para>
+            <para>6. Create the csv file with the added column. Call of FromTable.TableToCsv</para>
+            <para>It is important that this file is created. Functions may create table from the file.</para>
+            <para>Please note that the csv file with the appended column will be saved on the server with checkout->checkin (and not by this function).</para>
+            </summary>
+            <param name="i_row_header">Header row</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._SupportColumnInitialValuesAsStrings(System.Int32,System.String)">
+            <summary>Create array of default values for a support column
+            <para>The first element of the array (column) will get the value i_field_header.</para>
+            <para>All the other values of the output array (the column) will be '0'</para>
+            </summary>
+            <param name="i_number_rows">Number of rows of the table</param>
+            <param name="i_field_header">The header name of column</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.GetTable">
+            <summary>Returns the table (m_table_addresses) with addresses</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._StringToEnum(System.String)">
+            <summary>Convert field type string to field type enum</summary>
+        </member>
+        <member name="M:AddressesJazz.JazzMain._SetRowHeader(ExcelUtil.RowHeader@)">
+            <summary>Create and set row header for the address table
+            <para>The data for the first eleven (11) header records are retrieved from the config XML file object (AddressesJazzSettings)</para>
+            <para>The next header records are supporter records. Such a record holds the amount of money that a person has paid in order to become a supporter.</para>
+            <para>There is one record for each season starting with 2009-2010. The last header record is for the current season.</para>
+            <para>Please note that the existing csv file may not have records (a column) corresponding to the last supporter header record.</para>
+            <para>This occurs when a new season becomes the current season. Function Season.GetCurrentSeasonStartYear defines the current season.</para>
+            <para>Data for the supporter header records are retrieved with Season functions RecordNameSupporter, RecordTypeSupporter and RecordHelpSupporter.</para>
+            <para></para>
+            </summary>
+            <param name="o_row_header">Created row header</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.ReplaceAddressesTable(System.String,System.String@)">
+            <summary>Replace the existing addresses table with a new table defined by an input (backup) file
+            <para>For the case that the address CSV file is corrupted a backup file can be used.</para>
+            <para>1. Create an instance of Table</para>
+            <para>2. Set (backup) data with function CsvToTable in class ToTable</para>
+            <para>3. Set m_table_addresses to the new Table instance</para>
+            </summary>
+            <param name="i_local_file_with_path">Input CSV file with full path</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.Search(System.String,System.String[]@,System.Int32[]@,System.String@)">
+            <summary>Returns a string array with found records and a corresponding array with record indices
+            <para>The function GetRows in class TableSearch is used to get the records with the given search string.</para>
+            <para>Search is made in fields first name and family name.</para>
+            </summary>
+            <param name="i_search_string">Search string</param>
+            <param name="o_display_strings">Display strings</param>
+            <param name="o_record_indices">Record indices</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.Sort(System.String,System.String@)">
+            <summary>Sorts the table
+            <para>1. Function SortField in class TableSort is called.</para>
+            </summary>
+            <param name="i_column_header">Column header string</param>
+            <param name="o_error">Error message if function fails</param>
+            <returns>False, if function fails</returns>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.AppendEmptyRow(System.Int32@,System.String@)">
+            <summary>Append empty row to the table</summary>
+            <para>1. Function Table.AddEmptyRow is called.</para>
+            <param name="o_row_index">Index for the added row</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.SetSupportToZeroForRow(System.Int32,System.String@)">
+            <summary>Set support for all seasons to zero (0) in a given row
+            <para>The support is not allowed to be empty</para>
+            <para>1. Functions Table.GetRow, Table.GetField, Field.FieldValue and Row.SetFieldValue are called.</para>
+            </summary>
+            <param name="i_row_index">Index for the input row</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.RemoveRow(System.Int32,System.String@)">
+            <summary>Remove row in the table
+            <para>1. Function Table.RemoveRow is called.</para>
+            </summary>
+            <param name="i_row_index">Index for that shall be removed</param>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.RemoveAllTemporaryUsedFiles(System.String@)">
+            <summary>Remove all temporary used files
+            <para>1. Delete backup files. Call of RemoveTemporaryUsedBackupFiles.</para>
+            <remarks>Installer should create subdirectories Excel and Backups with modify rights</remarks>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.RemoveTemporaryUsedBackupFiles(System.String@)">
+            <summary>Remove temporary used backup files
+            <para>1. Get backup file names. Call of Reset.GetBackupFiles.</para>
+            <para>2. Delete backup files.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="M:AddressesJazz.JazzMain.RemoveTemporaryUsedCheckinCheckoutFile(System.String@)">
+            <summary>Remove temporary used checkin-checkout file
+            <para>1. Get checkin-checkout file name. Call of _GetCheckInOutLogFileName.</para>
+            <para>2. Delete checkin-checkout file.</para>
+            </summary>
+            <param name="o_error">Error description</param>
+        </member>
+        <member name="T:AddressesJazz.Output">
+            <summary>Class that handles output of lists
+            <para>Output is for instance Excel files and text files with names and addresses for the yearly letter and for the supporters.</para>
+            <para>The requests are commands (calls) normally coming from the JazzForm class.</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.Output.GetAllOutput">
+            <summary>Get all available output lists as an array of strings.
+            <para>The function should be called from a Form class for e.g. a Combo Box.</para>
+            <para>The returned (hardcoded) array defines the available output lists.</para>
+            <para>The first element in the array is a header (caption) for the elements</para>
+            <para>All array names are defined in the configuration file (class AddressesJazzSettings).</para>
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.Output.GetHeaderItem">
+            <summary>Get the header (prompt/caption),i.e. the first item in the array of output lists.</summary>
+        </member>
+        <member name="M:AddressesJazz.Output.ExecuteRequest(ExcelUtil.Table,System.String,System.Int32,System.String,System.String,System.String@)">
+            <summary>Output the requested list
+            <para>One of the following execution functions are called</para>
+            <para>- MailAdressesAsXslx</para>
+            <para>- MailAdressesAsCsv</para>
+            <para>- SupportListTxt</para>
+            <para>- SponsorListTxt</para>
+            <para>- SupportAddressesAsCsv</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresse</param>
+            <param name="i_season_column_name">Season column name</param>
+            <param name="i_selected_index">Index defining the output list</param>
+            <param name="i_selected_inner_text">Text corresponding to the selected index</param>
+            <param name="i_output_file_name">Name of the output file</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.MailAdressesAsXslx(ExcelUtil.Table,System.String,System.String@)">
+            <summary>Output mail addresses as XLSX file
+            <para>A Table with mail addresses for the XLSX output is created with condition Post=WAHR and Sponsor=FALSCH.</para>
+            <para>Function TableToXlsx in class FromTable is called.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_output_file_name">Output file name</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.MailAdressesAsCsv(ExcelUtil.Table,System.String,System.String@)">
+            <summary>Output mail addresses as CSV file
+            <para>A Table with mail addresses for the CSV output is created with condition Post=WAHR and Sponsor=FALSCH.</para>
+            <para>Function TableToCsv in class FromTable is called.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_output_file_name">Output file name</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.MailAddressesModify(ExcelUtil.Table,System.String@)">
+            <summary>Modify output mail addresses
+            <para>Only the address data (columns) that will be used for a mail will be kept</para>
+            <para></para>
+            </summary>
+            <param name="i_table_mail_addresses">Table with addresses that will be modified (input and output)</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.SupportListTxt(ExcelUtil.Table,System.String,System.String,System.String@)">
+            <summary>Output of list as text file with supporters for a given season
+            <para>The fields (columns) that shall be outputted is defined in a hardcoded string array.</para>
+            <para>Sizes of the output text fields and if the text shall be right or left aligned are also defined.</para>
+            <para>Output records (supporters) are defined by the support sum (> 0 CHF) for the input season.</para>
+            <para>The text file should be created in subdirectory (Output) in the exe directory.</para>
+            <para>Supporter) data is written to the file.</para>
+            <para>The output text file is opened with Notepad.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_season_column_name">The season that user has set</param>
+            <param name="i_output_file_name">Output file name with full path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.SupportersAsXml(ExcelUtil.Table,System.String,System.String,System.String@)">
+            <summary>Output a list as XML file with supporters </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_season_column_name">The season that user has set</param>
+            <param name="i_output_file_name">Output file name with full path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.SupportAddressesAsCsv(ExcelUtil.Table,System.String,System.String,System.String@)">
+            <summary>Output a list as CSV Excel file with supporter addresses </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_season_column_name">The season that user has set</param>
+            <param name="i_output_file_name">Output file name with full path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output._OutputWarningFile(System.String[],System.String,System.String@)">
+            <summary>Creates a file with warnings and opens it with notepad </summary>
+        </member>
+        <member name="M:AddressesJazz.Output.SponsorListTxt(ExcelUtil.Table,System.String,System.String@)">
+            <summary>Output list of sponsors as text file
+            <para>The fields (columns) that shall be outputted is defined in a hardcoded string array.</para>
+            <para>Sizes of the output text fields and if the text shall be right or left aligned are also defined.</para>
+            <para>Output records (sponsors) are defined by the flag Sponsor=WAHR.</para>
+            <para>The text file should be created in subdirectory (Output) in the exe directory.</para>
+            <para>Sponsor data is written to the file. Function _OutputSupportListRow constructs the output line.</para>
+            <para>The output text file is opened with Notepad.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_output_file_name">Output file name with path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.NewsletterListTxt(ExcelUtil.Table,System.String,System.String@)">
+            <summary>Outputs a list of newsletter addressees as a text file
+            <para>The fields (columns) that shall be outputted is defined in a hardcoded string array.</para>
+            <para>Sizes of the output text fields and if the text shall be right or left aligned are also defined.</para>
+            <para>Output records are defined by the flag NewsletterJazz=WAHR.</para>
+            <para>The text file should be created in subdirectory (Output) in the exe directory.</para>
+            <para>Function _OutputSupportListRow constructs the output line.</para>
+            <para>The output text file is opened with Notepad.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_output_file_name">Output file name with path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.CheckListTxt(ExcelUtil.Table,System.String,System.String,System.String@)">
+            <summary>Output list of check results as a text file
+            <para>The fields (columns) that shall be outputted is defined in a hardcoded string array.</para>
+            <para>Sizes of the output text fields and if the text shall be right or left aligned are also defined.</para>
+            <para>Output records are defined by the flags Post=FALSCH, NewsletterJazz=FALSCH and Sponsor=FALSCH.</para>
+            <para>The text file should be created in subdirectory (Output) in the exe directory.</para>
+            <para>Sponsor data is written to the file. Function _OutputSupportListRow constructs the output line.</para>
+            <para>The output text file is opened with Notepad.</para>
+            </summary>
+            <param name="i_table_addresses">Table with addresses</param>
+            <param name="i_output_file_name">Output file name with path</param>
+            <param name="i_season_column_name">Season column name</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output._OutputSupportListRow(System.String[],System.Int32[],System.Boolean[])">
+            <summary>Returns one row for an output list
+            <para>Column values (text fields) that are too long will be shortened</para>
+            </summary>
+            <param name="i_str_columns">Array with column values</param>
+            <param name="i_size_columns">Array with column sizes</param>
+            <param name="i_right_aligned">Array with flags defining how the text shall be aligned</param>
+        </member>
+        <member name="M:AddressesJazz.Output.StartExcel(System.String,System.String@)">
+            <summary>Starts Excel</summary>
+            <param name="i_output_file_name">Output file name with full path</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Output.FileIsLocked(System.String)">
+            <summary>Checks if file is locked</summary>
+            <param name="i_file_name">File name with full path</param>
+        </member>
+        <member name="M:AddressesJazz.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:AddressesJazz.Reset">
+            <summary>Class with functions that handle reset to an older (backup) address list
+            <para></para>
+            
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.Reset.DownloadBackupFiles(System.String@)">
+            <summary>Download backup files from the server.
+            <para>1. Host and user name from the configuration file (). Password () from JazzMain.m_ftp_password.</para>
+            <para>2. The function checks if there is an Internet connection.</para>
+            <para>3. The backup addresses CSV files are downloaded with function GetFiles in class Ftp.DownLoad.</para>
+            </summary>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Reset.GetBackupFiles(System.String[]@,System.String@)">
+            <summary>Get available backup files as an array of strings.
+            <para>Downloaded backup files are on a subdirectory (Backup) to the exe directory</para>
+            <para>1. Function GetFilesDirectory in class FileUtil is called to get the file names.</para>
+            </summary>
+            <param name="o_backup_files">Array with backup file names</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="M:AddressesJazz.Reset.ResetWithBackupFile(AddressesJazz.JazzMain,System.String,System.String@)">
+            <summary>Reset the addresses Table with a Table defined by a backup file.
+            <para>1. Function JazzMain.ReplaceAddressesTable executes the command</para>
+            </summary>
+            <param name="i_main">JazzMain class</param>
+            <param name="i_backup_file">Full name of the backup file</param>
+            <param name="o_error">Error message</param>
+        </member>
+        <member name="T:AddressesJazz.ResetForm">
+            <summary>Reset to an old addresses backup file</summary>
+        </member>
+        <member name="M:AddressesJazz.ResetForm.#ctor(AddressesJazz.JazzForm,AddressesJazz.JazzMain)">
+            <summary>Constructor that gets backup files from the server</summary>
+        </member>
+        <member name="M:AddressesJazz.ResetForm._SetComboBoxBackups">
+            <summary>Set the combobox with backup file names</summary>
+        </member>
+        <member name="M:AddressesJazz.ResetForm.m_combo_box_backups_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>The user selected a backup file</summary>
+        </member>
+        <member name="F:AddressesJazz.ResetForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AddressesJazz.ResetForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AddressesJazz.ResetForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AddressesJazz.Season">
+            <summary>Class with functions that handle the seasons</summary>
+        </member>
+        <member name="F:AddressesJazz.Season.m_start_season">
+            <summary>Start year for the storing of season data, i.e. for the columns with supporter amount columns</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.GetSupporterSeasonStartYear">
+            <summary>Get supporter season start year</summary>
+        </member>
+        <member name="F:AddressesJazz.Season.m_start_date_new_season">
+            <summary>Start month for a new season is four (April). </summary>
+        </member>
+        <member name="M:AddressesJazz.Season.GetCurrentSeason">
+            <summary>Returns the current season as string. </summary>
+        </member>
+        <member name="M:AddressesJazz.Season.GetCurrentSeasonStartYear">
+            <summary>Returns the current season start year as integer. </summary>
+        </member>
+        <member name="M:AddressesJazz.Season.RecordNameSupporter(System.Int32)">
+            <summary>Returns record name for supporter data (column)</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.SeasonString(System.Int32)">
+            <summary>Returns record name for supporter data (column)</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.RecordTypeSupporter">
+            <summary>Returns record type for supporter data</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.RecordHelpSupporter(System.Int32)">
+            <summary>Returns record help for supporter data</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.GetAllSeasons">
+            <summary>Get all seasons as an array of strings.</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.GetPreviousSeasons">
+            <summary>Get previous seasons as an array of strings.</summary>
+        </member>
+        <member name="M:AddressesJazz.Season.DownloadPreviousSeasons(System.String,System.String,System.String,System.String,System.String[]@,System.String@)">
+            <summary>Add the support from previous seasons to the input table</summary>
+        </member>
+        <member name="M:AddressesJazz.Season._PreviuosFileNames(System.String)">
+            <summary>Returns the previous file names</summary>
+        </member>
+        <member name="T:AddressesJazz.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AddressesJazz.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AddressesJazz.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:AddressesJazz.Properties.Resources.JAZZ_live_AARAU_Adressen">
+             <summary>
+               Looks up a localized string similar to {\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang2055\deflangfe2055\themelang1031\themelangfe0\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+            {\f42\fbidi \fswiss\fcharset0\fprq2{\*\panose 020b0606020202030204}Arial Narrow;}{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roma [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:AddressesJazz.Properties.Resources.Logo_3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AddressesJazz.Properties.Resources.TestProtokoll">
+             <summary>
+               Looks up a localized string similar to Test von JazzAdressen
+            =====================
+            
+            Bitte diese Datei als TestProtokoll_yyyymmdd.txt speichern.
+            
+            
+            Kurzname für JAZZ live Aarau Adressen 2014 Beta Version ist unten &quot;Beta&quot;.
+            
+            Name des Testers: 
+            Betriebssystem des Computers:
+            Datum:
+            
+            Herunterladen von Beta mit Download
+            
+            Deinstallieren von der vorigen Beta
+            
+            Installieren von Beta
+            
+            Nach einige Personen suchen
+            
+            Die Daten für einige Personen ändern. 
+            Teste auch nicht erlaubte Änderungen wie alles leer, ungültige E-Mailadressen, etc.
+            Be [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+    </members>
+</doc>

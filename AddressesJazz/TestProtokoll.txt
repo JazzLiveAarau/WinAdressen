@@ -1,0 +1,58 @@
+﻿Test von JazzAdressen
+=====================
+
+Bitte diese Datei als TestProtokoll_yyyymmdd.txt speichern.
+
+
+Kurzname für JAZZ live Aarau Adressen 2014 Beta Version ist unten "Beta".
+
+Name des Testers: 
+Betriebssystem des Computers:
+Datum:
+
+Herunterladen von Beta mit Download
+
+Deinstallieren von der vorigen Beta
+
+Installieren von Beta
+
+Nach einige Personen suchen
+
+Die Daten für einige Personen ändern. 
+Teste auch nicht erlaubte Änderungen wie alles leer, ungültige E-Mailadressen, etc.
+Beta beenden, neu starten und Änderungen kontrollieren.
+
+Einige Personen zufügen. 
+Teste auch nicht erlaubte Eingabedaten wie alles leer, ungültige E-Mailadressen, etc.
+Suche nach der neuen Personen zuerst ohne Sortieren. Danach nach sortieren.
+Beta beenden, neu starten und die zugefügte Daten kontrollieren.
+
+Spezialfall testen: Neue -> Einige Daten eingeben -> Löschen
+
+Ohne Internetzugang Beta starten
+
+Ein erstes Beta starten, eine Änderung machen ohne zu speichern
+Ein zweites Beta starten und eine Änderung machen (simuliert noch einen Benutzer)
+Speichern mit dem ersten Beta und eine Änderung im zweiten Beta machen.
+Beta beenden, neu starten und die geänderte Daten kontrollieren.
+
+Beta starten, Änderungen machen und Beta beenden mit Exit (ohne zu speichern):
+Einmal Exit ohne etwas zu speichern und einmal mit speichern von Änderungen.
+In beiden Fällen Beta starten und Daten kontrollieren.
+
+Alle Output Optionen testen. Kontrolliere, dass die Output-Daten richtig sind, z.B.
+Auf der Versand-Liste soll keine Sponsoren sein.
+
+Die Benutzeroberfläche (GUI = graphical User Interface) beurteilen. 
+Kontrolliere, dass alle Tooltips richtig sind.
+
+Beta Tests mit anderen Computers (Betriebssystemen).
+
+Kontrolliere beim Installation, dass Jazz Adressen eine neue Konfigurationsdatei kreiert hat.
+
+Kontrolliere dass temporäre Backup Dateien und die Checkin-Checkout Datei gelöscht sein
+
+
+
+
+

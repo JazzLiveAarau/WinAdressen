@@ -1,0 +1,57 @@
+﻿ToDo.txt TODO for JazzAdressen
+==============================
+
+- Make a new version 11 
+
+- Erase of the temporary files in directory Backups does not work.
+  There is an exception. Do the following:
+  a Add try - catch with error message 
+  b Check and compare permissions for the subdirectory and let 
+    the application or installer set the permissions.
+  c Check in the appcation if subdirectories exist and have the right permissions
+    Popup error messages telling what the user must do if permissions not are OK
+	Write perhaps instructions in the manual
+
+	The reason was hopefully that not the full file name was given as input to function GetBackupFiles
+	With only the local file name it worked if the below shortcut paramater was set:
+	Ausführen in: "C:\Apps\JAZZ live AARAU\Adressen"
+
+- Installer should add NeueVersion
+
+-In the manual emphasize that one has first to download the new version and then remove the application
+ before the new version is installed.
+
+
+- For Neu there is a problem to input support for two seasons
+
+- Start with previous backup file if data is corrupt in starting CSV file
+  (automatic to dialog)
+
+- Scale dialog and text size. Perhaps remove "full screen" or let it be of 
+  maximum size that the program sets
+
+- Add return as jump to the the next field. 
+  Checkt that tab works as jump to the next field
+
+- Delete perhaps also the CSV file.
+
+- Ask the users if the list shall be sorted after "Neue" Perhaps difficult to do....
+
+- Add caps for all Dialog elements
+- Path with 20%(?) for space. Problem with start of WinWord.
+- Remove hardcoded Header Table data.
+
+- Make Beta version for tests
+  Let Philip make the Beta test first. Propose that Philip or I make
+  the tests together with Bruno and/or Peter H.
+- Search: It should not be possible to write in the search result area (now only color changed)
+- Add output CheckData.txt: 
+  No Newsletter, no Mail, no Support
+- Mouse wheel: Never for Season, never for Output
+- Problem with shortcut when Execute in directory is missing
+- Fix Tab numbering
+- Add Return as jump to next Input field. 
+  Make a list between which input fields it should work
+- Make EditConfig as an assembly
+- Document the application.Open Intranet from Help dialog is made
+
