@@ -1458,7 +1458,7 @@
             Class for password.
             This file shall not be be uploaded to GitHub.
             In the git ignore file shall the following lines be added:
-            
+            AddressesJazz/PassWord.cs
             </summary>
         </member>
         <member name="P:AddressesJazz.PassWord.Server">
