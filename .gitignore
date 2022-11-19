@@ -457,3 +457,11 @@ $RECYCLE.BIN/
 ## Upload and download password
 ##
 AddressesJazz/PassWord.cs
+
+##
+## Installation files
+##
+Installer/NeueVersion/*.exe
+Installer/*.dll
+Installer/*.exe
+##Installer/LatestVersionInfo/*.txt

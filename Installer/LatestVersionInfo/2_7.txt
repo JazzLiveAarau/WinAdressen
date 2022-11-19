@@ -1,0 +1,6 @@
+﻿File: n_m.txt
+Date: 2018-10-21
+The name of this file defines the current (latest) version of the JAZZ live AARAU Addresses Application.
+At start of the JAZZ live AARAU Addresses Application this file will be downloaded from the server.
+The server directory is: LatestVersionInfo.
+A complete version name is n.m.k.l. This application only uses m.n
