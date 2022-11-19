@@ -96,6 +96,7 @@
     </Compile>
     <Compile Include="JazzMain.cs" />
     <Compile Include="Output.cs" />
+    <Compile Include="PassWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reset.cs" />
@@ -144,27 +145,27 @@
     <None Include="Logo_3.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DetectEncoding\EncodingTools\EncodingTools.csproj">
+    <ProjectReference Include="..\..\WinEncodingTools\EncodingTools\EncodingTools.csproj">
       <Project>{ca19d4de-b232-491a-92bf-7bf3a2758694}</Project>
       <Name>EncodingTools</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Excel\ExcelUtil\ExcelUtil.csproj">
+    <ProjectReference Include="..\..\WinExcelUtil\ExcelUtil\ExcelUtil.csproj">
       <Project>{8aa5d046-8c2d-4f55-acdc-13154ed3ec0d}</Project>
       <Name>ExcelUtil</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Ftp\Ftp\Ftp.csproj">
+    <ProjectReference Include="..\..\WinFtp\Ftp\Ftp.csproj">
       <Project>{fb55f4a3-2a79-4130-bbde-71091cb7a7c8}</Project>
       <Name>Ftp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\HelpAdressen\AdressesUtility\AdressesUtility.csproj">
+    <ProjectReference Include="..\..\WinHelpAdressen\AdressesUtility\AdressesUtility.csproj">
       <Project>{0c44594f-7a28-4980-914f-d65ba89b2030}</Project>
       <Name>AdressesUtility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\JazzFtp\JazzFtp\JazzFtp.csproj">
+    <ProjectReference Include="..\..\WinJazzFtp\JazzFtp\JazzFtp.csproj">
       <Project>{a7b3d312-be5b-4ff2-98fe-5ca0071c20cb}</Project>
       <Name>JazzFtp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\JazzVersion\JazzVersion\JazzVersion.csproj">
+    <ProjectReference Include="..\..\WinVersion\JazzVersion\JazzVersion.csproj">
       <Project>{d3d423fa-05f0-48a3-9fc8-cc6bab0dba22}</Project>
       <Name>JazzVersion</Name>
     </ProjectReference>

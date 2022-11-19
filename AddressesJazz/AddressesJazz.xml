@@ -1453,6 +1453,19 @@
             <summary>Checks if file is locked</summary>
             <param name="i_file_name">File name with full path</param>
         </member>
+        <member name="T:AddressesJazz.PassWord">
+            <summary>
+            Class for password.
+            This file shall not be be uploaded to GitHub.
+            In the git ignore file shall the following lines be added:
+            
+            </summary>
+        </member>
+        <member name="P:AddressesJazz.PassWord.Server">
+            <summary>
+            Password for upload and download to the server
+            </summary>
+        </member>
         <member name="M:AddressesJazz.Program.Main">
             <summary>
             The main entry point for the application.

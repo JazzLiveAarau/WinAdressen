@@ -26,7 +26,7 @@ namespace AddressesJazz
         #region Member parameters
 
         /// <summary>FTP password for the download and upload</summary>
-        static public string m_ftp_password = "TODO";
+        static public string m_ftp_password = PassWord.Server;
 
         /// <summary>Get FTP password</summary>
         public string FtpPassword
